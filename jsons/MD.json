@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mindsight-1556669886866",
+  "private_key_id": "ddb2b615a620eaba6f562f0b43d4ebcb3064a9ec",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCnAztsXR3c2BV4\nfFhxkkx9bD5EUr1kO3gQ+Fp68981YUP6T/Jvtq9HrwnK9DDOh6pb+bwVk5CL0swz\nvFBfwNBnTrHvK+BPFInjCwTn5yDXDDOPyfsl8pVcdAPxN0sB8YPF4TRYUqUHUhG+\nrF1dE9xGpvSWp+FowiAHtNCsjRguMFVtH7URnavZ+Oh5Om8bPC89MrFssqORIs7I\nW5EyhBfEeqC5RX2ZcymXoXeYrFuZ91NVO+Yzvfu1H40jHvfSmNo+HKuBZrIUeSnN\nwkSUMOdCzxlYESo7VffxpC9viWwJkOk7o17INzicTN/hAccVD9JFQpWdCC86DLTB\nVc5GWRyfAgMBAAECggEAGiHc1e9aAVjEP0aBlj+0fTmHIqypmrndZxZdHfjzt4gB\nGXUR853rnjVKvHlp+57prpuMbPnad65jqkKwdtMWKNv85nYAko8dpituuJSHJG7x\n0HFjvUPQUBeNGFy0/VhbbIZ46MsBrHwQb7vLnglCAcIU6k/ZaslZNqt5rU4kdvFz\nOMX8Pyj3NA8vBG5LoJ3jRQ1gyDXtKkYSjuXKKyBhRRx3BxcxBJlbk6bwvTf1xB3T\nHcvOuQxjOZ3gAxHxe0su0Q4hbBCxRIVJ57LbuLfZzAeR7K/SUiMbnSLjS51Ao+Nj\nZPaJ+mmWRoDuuCy/FgH/lEXqKZbr9OPP80CWBk54AQKBgQDgOAvAbnPXvSfQll3Z\nQFxZSixJ1ywl5Wt8+/l7y5K3u8I/qHgnw26MGdY01xxoNz0HHWoe3pnadmF7IeMF\nnNaJ9ssb37g1Nz0SBr6FC+SbJQqvOkF+7NbJE9nwj/lCGsFBQoMsEaDBYSxzjalz\nbAqaJ2R+vgvKljCT1jy/DKCoAQKBgQC+r2l755lC/hAqIeogksBIg3qxsH6UiIwl\nuVn0ubl095avly5rjEm86L37dzAJc9a205nLgVnMCmbNnZOO629nOkagikyhaDlZ\nP1zWJgKp6VUSxW4h0JoTgvGRDo7SZAtgg/sW8PdJVMj9yroRwntzGfK/y1L7Wzsi\ns6NU7fDEnwKBgQDB5lXrVNljMVZUISUJsonqQaWpOaYZI5xf2nv23aaEs5+Zc3Rt\nVqmsCM/gpEIRsetZ0ssp5PECJqvIUxbDjM1PRBiDg2YGxz1N8H0kC5PnwxHJVUS8\noc5g14T6b1dsHj0P1ZggLSJq+UD6sQBgK4fDpdtXa7xAtr9NqdCgmyf4AQKBgFmt\nGvmXeJ9l5mo6GuaIvX8cvkX0kAMAmJBhM+oAsjRNAAPCIKWZi1AZUMeDTQcVAERp\nDSoEwhtQRPqsAao0FOdCI9b6U4GRB29uehWIOLZ5snWqfdnPRbapXTvv0cEmJaeV\nSi+G0XUeN4wLnCggA3ilGmGSmIr3Y781JjoZ0KJXAoGBAIQ11/BFfTPC65Sp2oC4\nMH4qtuqUVjfiUG7DYz1d+rAChTth36yIRh88JIxMcCYgf9bijzhVBqN6he370CI9\nyEroLuWJDLX5yflvvFqjU1topVw6AtatiwJjxudBofTFe0LeGJs2iLuH/VbLctOp\n4JfekDMhofNq0LZgCEa7X840\n-----END PRIVATE KEY-----\n",
+  "client_email": "starting-account-ff9uigo1bm5v@mindsight-1556669886866.iam.gserviceaccount.com",
+  "client_id": "107735790032202455244",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/starting-account-ff9uigo1bm5v%40mindsight-1556669886866.iam.gserviceaccount.com"
+}

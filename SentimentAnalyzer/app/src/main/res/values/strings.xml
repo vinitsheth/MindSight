@@ -38,5 +38,6 @@
 
   <string name="score">Score</string>
   <string name="magnitude">Magnitude</string>
+    <string name="accessibility_service_label">SentimentLogger</string>
 
 </resources>

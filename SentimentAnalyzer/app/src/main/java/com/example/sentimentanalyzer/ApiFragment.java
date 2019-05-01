@@ -88,6 +88,16 @@ public class ApiFragment extends Fragment {
 
     private GoogleCredential mCredential;
 
+//    private CloudNaturalLanguage mApi = new CloudNaturalLanguage.Builder(
+//            new NetHttpTransport(),
+//            JacksonFactory.getDefaultInstance(),
+//            new HttpRequestInitializer() {
+//                @Override
+//                public void initialize(HttpRequest request) throws IOException {
+//                    mCredential.initialize(request);
+//                }
+//            }).build();
+
     private CloudNaturalLanguage mApi = new CloudNaturalLanguage.Builder(
             new NetHttpTransport(),
             JacksonFactory.getDefaultInstance(),
@@ -97,7 +107,6 @@ public class ApiFragment extends Fragment {
                     mCredential.initialize(request);
                 }
             }).build();
-
     private final BlockingQueue<CloudNaturalLanguageRequest<? extends GenericJson>> mRequests
             = new ArrayBlockingQueue<>(3);
 
