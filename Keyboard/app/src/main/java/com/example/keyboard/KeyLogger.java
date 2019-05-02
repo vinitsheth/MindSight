@@ -84,7 +84,7 @@ public class KeyLogger extends AccessibilityService {
             }
         }.execute();
     }
-
+    //dummy comment
     static void writeToFB(float score,float magnitude,String time){
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser != null) {
