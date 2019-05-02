@@ -92,11 +92,11 @@ public class KeyLogger extends AccessibilityService {
             FirebaseDatabase database = FirebaseDatabase.getInstance();
             DatabaseReference userRef = database.getReference(currentUser.getUid());
             DatabaseReference timeRef = userRef.child(time);
-            DatabaseReference scoreRef = timeRef.child("score");
-            DatabaseReference magnitudeRef = timeRef.child("magnitude");
-
-            scoreRef.setValue(score);
-            magnitudeRef.setValue(magnitude);
+            //DatabaseReference scoreRef = timeRef.child("score");
+            //DatabaseReference timevalRef = timeRef.child("time");
+            timeRef.setValue(score*magnitude*100);
+//            scoreRef.setValue(score);
+//            magnitudeRef.setValue(magnitude);
         }
 
 
@@ -133,7 +133,7 @@ public class KeyLogger extends AccessibilityService {
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
 
-        DateFormat df = new SimpleDateFormat("MM-dd-yyyy, HH:mm:ss z", Locale.US);
+        DateFormat df = new SimpleDateFormat("MMMM dd, yyyy HH:mm:ss Z", Locale.US);
         String time = df.format(Calendar.getInstance().getTime());
 
         switch(event.getEventType()) {
