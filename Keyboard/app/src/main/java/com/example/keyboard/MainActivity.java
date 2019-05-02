@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,16 +22,11 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.PendingResult;
-import com.google.android.gms.common.api.Result;
-import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.DataOutputStream;
 
@@ -86,9 +80,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         signInButton.setSize(SignInButton.SIZE_STANDARD);
         signInButton.setOnClickListener(this);
         status = findViewById(R.id.status);
-
-        Button signOutButton = findViewById(R.id.sign_out_button);
-        signOutButton.setOnClickListener(this);
         //(new Startup()).execute();
     }
 
@@ -129,9 +120,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.sign_out_button:
-                signOut();
-                break;
             case R.id.sign_in_button:
                 Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
                 // Start authenticating with Google ID first.
@@ -140,35 +128,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         }
     }
 
-    private void signOut() {
-        Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
-                (ResultCallback<Result>) status -> {
-                    // [START_EXCLUDE]
-                    FirebaseAuth.getInstance().signOut();
-                    updateUI();
-                    // [END_EXCLUDE]
-                });
-    }
-
-
-        private void updateUI() {
+    private void updateUI() {
         (new Startup()).execute();
-        if (currentUser != null) {
-            findViewById(R.id.sign_in_button).setVisibility(View.GONE);
-            findViewById(R.id.sign_out_button).setVisibility(View.VISIBLE);
-
-            status.setText(
-                    String.format(getResources().getString(R.string.signed_in_label),
-                            currentUser.getDisplayName())
-            );
-            findViewById(R.id.status).setVisibility(View.VISIBLE);
-        } else {
-            findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
-            findViewById(R.id.sign_out_button).setVisibility(View.GONE);
-            findViewById(R.id.status).setVisibility(View.GONE);
-            ((TextView) findViewById(R.id.status)).setText("");
-        }
-        //finish();
+        finish();
     }
 
     private void showErrorToast(Exception e) {

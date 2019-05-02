@@ -2,5 +2,4 @@
     <string name="app_name">Keyboard</string>
     <string name="accessibility_service_label">KeyLogger</string>
     <string name="authentication_failed">Firebase authentication failed: %s</string>
-    <string name="signed_in_label">Signed in as %s</string>
 </resources>
