@@ -29,7 +29,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class KeyLogger extends AccessibilityService {
     String currentText = "";
-    public static final String API_KEY = "AIzaSyAWw9v3FvRwku2kF2YbtGmQgGxsYOrYz8Q";
+    public static final String API_KEY = "";
     static private CloudNaturalLanguage naturalLanguageService;
     static private Document document;
     static private Features features;
